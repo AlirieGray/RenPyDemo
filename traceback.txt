@@ -1,0 +1,60 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/script.rpy", line 16, in prepare_screen
+    screen item_potion:
+  File "game/script.rpy", line 16, in prepare
+    screen item_potion:
+  File "game/script.rpy", line 17, in prepare
+    showif objects_on_ground["potion"]:
+  File "game/script.rpy", line 17, in prepare
+    showif objects_on_ground["potion"]:
+  File "game/script.rpy", line 18, in prepare
+    imagebutton:
+  File "game/script.rpy", line 18, in prepare
+    imagebutton:
+  File "game/script.rpy", line 25, in prepare
+    if len(inventory) > 1:
+  File "game/script.rpy", line 27, in prepare
+    else:
+SyntaxError: invalid syntax (script.rpy, line 28)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 652, in main
+    run(restart)
+  File "renpy/main.py", line 97, in run
+    renpy.display.screen.prepare_screens()
+  File "renpy/display/screen.py", line 955, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/script.rpy", line 16, in prepare_screen
+    screen item_potion:
+  File "game/script.rpy", line 16, in prepare
+    screen item_potion:
+  File "game/script.rpy", line 17, in prepare
+    showif objects_on_ground["potion"]:
+  File "game/script.rpy", line 17, in prepare
+    showif objects_on_ground["potion"]:
+  File "game/script.rpy", line 18, in prepare
+    imagebutton:
+  File "game/script.rpy", line 18, in prepare
+    imagebutton:
+  File "game/script.rpy", line 25, in prepare
+    if len(inventory) > 1:
+  File "game/script.rpy", line 27, in prepare
+    else:
+  File "renpy/pyanalysis.py", line 714, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "renpy/pyanalysis.py", line 696, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (script.rpy, line 28)
+
+Windows-10-10.0.19041
+Ren'Py 7.4.10.2178
+Demo 1.0
+Thu Jun 15 21:07:26 2023

@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 105: expected statement.
+    lyth_relationship = lyth_relationship - 25
+                      ^
+
+File "game/script.rpy", line 109: expected statement.
+    lyth_relationship = lyth_relationship + 25
+                      ^
+
+Ren'Py Version: Ren'Py 7.4.10.2178
+Thu Jun 15 21:44:33 2023
